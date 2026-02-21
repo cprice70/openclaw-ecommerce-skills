@@ -1,0 +1,16 @@
+# Credentials
+**/.env
+*.env
+
+# State files
+**/state.json
+
+# Node
+**/node_modules/
+
+# Logs
+**/*.log
+
+# OS
+.DS_Store
+Thumbs.db

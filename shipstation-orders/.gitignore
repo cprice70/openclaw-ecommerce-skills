@@ -1,0 +1,11 @@
+# Credentials
+.env
+
+# State
+state.json
+
+# Node
+node_modules/
+
+# Logs
+*.log
