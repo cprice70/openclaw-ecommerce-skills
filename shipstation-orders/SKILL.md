@@ -4,7 +4,10 @@ description: Monitor ShipStation orders, detect issues, and send alerts. For e-c
 metadata:
   {
     "openclaw": {
-      "requires": { "bins": ["node"] }
+      "requires": { 
+        "bins": ["node"],
+        "env": ["SHIPSTATION_API_KEY", "SHIPSTATION_API_SECRET"]
+      }
     }
   }
 ---

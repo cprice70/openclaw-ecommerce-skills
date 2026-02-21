@@ -9,7 +9,7 @@ const path = require('path');
 
 // Load environment variables from .env
 function loadEnv() {
-  const envPath = path.join(__dirname, '../.env');
+  const envPath = path.join(__dirname, '.env');
   const envContent = fs.readFileSync(envPath, 'utf8');
   const env = {};
   
@@ -25,7 +25,7 @@ function loadEnv() {
 
 // Load state
 function loadState() {
-  const statePath = path.join(__dirname, '../state.json');
+  const statePath = path.join(__dirname, 'state.json');
   try {
     return JSON.parse(fs.readFileSync(statePath, 'utf8'));
   } catch (err) {
@@ -40,7 +40,7 @@ function loadState() {
 
 // Save state
 function saveState(state) {
-  const statePath = path.join(__dirname, '../state.json');
+  const statePath = path.join(__dirname, 'state.json');
   fs.writeFileSync(statePath, JSON.stringify(state, null, 2));
 }
 
