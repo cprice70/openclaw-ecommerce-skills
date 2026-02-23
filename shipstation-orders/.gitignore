@@ -3,6 +3,7 @@
 
 # State
 state.json
+shipping-state.json
 
 # Node
 node_modules/
